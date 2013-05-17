@@ -17,7 +17,7 @@ require 'twitter'
 ARGV.each do |file|
   rt = RegattaTweet.new(file)
   rt.each do |tweet|
-    # Twitter.update tweet
-    puts "I would say: #{tweet}"
+    Twitter.update tweet
+    # puts "I would say: #{tweet}"
   end
 end
