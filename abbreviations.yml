@@ -1,0 +1,169 @@
+---
+- specific:
+    - "Ann Arbor Pioneer": AAP
+    - "Anthony Wayne High School Crew": AW
+    - "Anthony Wayne": AW
+    - "Branksome Hall": Branksome
+    - "Brighton Rowing Club": Britn
+    - "Cadet (Concordia Luthern)": Cadet
+    - "Camp Randall Rowing Club": CR
+    - "Camp Randall": CR
+    - "Cincinnati Junior Rowing Club": CJRC
+    - "Cincinnati Junior": CJRC
+    - "Cincinnati Country Day School": CCD
+    - "Cincinnati Country Day": CCD
+    - "Central Catholic HS": CCHS
+    - "Central Catholic Rowing Club": CCRC
+    - "Clermont Crew": Clrmnt
+    - "Cleveland Scholastic Rowing Association": CSRA
+    - "Cleveland Scholastic": CSRA
+    - "Collegiate Academy Crew": CollAcad
+    - "Clermont HS": Clermnt
+    - "Dayton Boat Club": Daytn
+    - "Dayton BC": Daytn
+    - "Detroit Boat Club Crew": Detroit
+    - "Dublin Crew": Dublin
+    - "Grand Rapids Rowing Association": GrRapids
+    - "Greater Dayton Rowing Association": GDRA
+    - "Greater Dayton": GDRA
+    - "Greater Columbus Rowing Association": GCRA
+    - "The Milwaukee Rowing Club": MlwkeeRC
+    - "Louisville Rowing Club/Greater Louisville Rowing Foundation": "LvlleRC/GLRF"
+    - "Greater Louisville Rowing Foundation": GrLville
+    - "Greater Louisville Foundation": GrLville
+    - "Great Miami Rowing Center": GMiami
+    - "Great Miami": GMiami
+    - "Hawken": Hawkn
+    - "Hampton": Hmptn
+    - "Hilliard Rowing Association": Hillrd
+    - "Hilliard": Hillrd
+    - "Ignatius Chicago Rowing Association, Inc": IgnChi
+    - "Ignatius Chi": Ign-Chi
+    - "Indianapolis Rowing Center": Indy
+    - "Indianapolis Rowing": Indy
+    - "Lincoln Park Junior": LPJ
+    - "LPJ - Chicago Rowing Foundation": LPJ
+    - "LPJ- Chicago Rowing Foundation": LPJ
+    - "LPJ-Chicago Rowing Foundation": LPJ
+    - "LPJ - Chicago": LPJ
+    - "LPJ- Chicago": LPJ
+    - "LPJ-Chicago": LPJ
+    - "Loyola Academy": "Loyola"
+    - "Louisville Rowing Club": LVille
+    - "Louisville Rowing": LVille
+    - "Louisville Collegiate": LColleg
+    - "Metropolitan": Metro
+    - "The Milwaukee Rowing Club": Mlwkee
+    - "Milwaukee": Mlwkee
+    - "Rochester Rowing Club Juniors": R-MNjr
+    - "Rochester Rowing Club of Minnesota": R-MN
+    - "Rochester Minnesota": R-MN
+    - "Minnesota Boat Club": MN
+    - "Minnesota": MN
+    - "New Trier High School Rowing": NTrier
+    - "New Trier": NTrier
+    - "Notre Dame Academy Crew": NDAcad
+    - "Notre Dame Academy": NDA
+    - "North Allegheny Rowing Association/N Allegheny HS": NAlgny
+    - "North Allegheny Rowing Association": NAlgny
+    - "N Allegheny HS": NAlgny
+    - "Northville High School": NVille
+    - "North Suburban Crew, Inc.": NSubrbn
+    - "North Suburban": NSubrbn
+    - "Oakland Catholic HS": Oaklnd
+    - "Orchard Lake St. Mary's": StMary
+    - "Ohio Valley Rowing Club": OhioV
+    - "Ohio Valley": OhioV
+    - "Ohio University": OU
+    - "Parkersburg South": ParkS
+    - "Pittsburgh Rowing Club": Pitt
+    - "Rockford": Rockfrd
+    - "Shaker Heights": Shaker
+    - "Steel City Rowing Club": Steel
+    - "Steel City Rowing": Steel
+    - "St. Ignatius HS": SICleve
+    - "St. Ignatius": SICleve
+    - "St. Josephs Collegiate": StJoe
+    - "St. John Jesuit": StJohn
+    - "St. Francis de Sales": StFran
+    - "St. Louis Rowing Club": SLRC
+    - "St. Louis RC": SLRC
+    - "St. Louis": SLRC
+    - "StLouis": SLRC
+    - "St. Marys": StM
+    - "St. Ursula Toledo": StU
+    - "St. Ursula": StU
+    - "Taylor-Allderdice": T-A
+    - "Toledo Metropolitan Rowing Club": TolMetro
+    - "Toledo Metro Rowing Club": TolMetro
+    - "Toledo Metropolitan": TolMetro
+    - "Toledo Metro": TolMetro
+    - "Twin Cities Youth Rowing": TCY
+    - "Twin Cities Youth": TCY
+    - "Three Rivers": 3R
+    - "Upper Arlington High School": UA
+    - "Upper Arlington": UA
+    - "Upper Canada Colle": UCC
+    - "Upper Canada": UCC
+    - "University of Toledo": UofT
+    - "Westerville Rowing Club": WRC
+    - "Westerville": WRC
+    - "Winchester Thurston School": W-T
+    - "Winchester Thurston": W-T
+    - "Western Reserve Rowing Association": WRRA
+    - "Western Reserve": WRRA
+    - "Xavier University Crew": XU
+    - "Xavier University": XU
+    - "Y Quad Cities Rowing": YQC
+    - "Y Quad Cities": YQC
+    - "Unaffiliated (USA)": Unaffil
+- generic:
+    - "Junior Rowing Club": JRC
+    - " Rowing Club": RC
+    - "Rowing Club": RC
+    - " Boat Club": BC
+    - "Boat Club": BC
+    - " High School Rowing": HS
+    - "High School Rowing": HS
+    - " High School": HS
+    - "High School": HS
+    - "St. ": St
+    - "Collegiate Institute": CI
+    - " Rowing Association": RA
+- events:
+    - " - NATIONALS QUALIFIER": ''
+    - "- NATIONALS QUALIFIER": ''
+    - " NATIONALS QUALIFIER": ''
+    - "NATIONALS QUALIFIER": ''
+    - "Event ": Ev
+    - "Event": Ev
+    - "Womens ": W
+    - "Womens": W
+    - "Mens ": M
+    - "Mens": M
+    - "Girls ": G
+    - "Girls": G
+    - "Boys ": B
+    - "Boys": B
+    - "Varsity ": V
+    - "Varsity": V
+    - "Open ": O
+    - "Open": O
+    - "Novice ": N
+    - "Novice": N
+    - "8+": "8"
+    - "4X": 4x
+    - "2X": 2x
+    - "1st ": ''
+    - "1st": ''
+    - "2nd ": "2"
+    - "2nd": "2"
+    - "3rd ": "3"
+    - "3rd": "3"
+    - "WJr JV8": "W JV8"
+    - "MJr JV8": "M JV8"
+    - "WJr JV4": "W JV4"
+    - "MJr JV4": "M JV4"
+    - "Jr ": J
+    - "Jr": J
+    - "Did Not Finish": DNF
