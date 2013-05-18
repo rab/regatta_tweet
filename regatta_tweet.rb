@@ -51,7 +51,7 @@ class RegattaTweet
     page_str = Regexp.new("#{created_at.strftime('%A %d-%b-%Y')} Page:")
     delete_next = nil
 
-    shortened = raw_strings.map do |string|
+    @shortened = raw_strings.map do |string|
       if page_str =~ string         # Oh, the page number is next!
         delete_next = true          # We don't want it.
         ''                          # (blanks will disappear)
@@ -77,7 +77,7 @@ class RegattaTweet
     # Take the concentrated raw data and make tweet-sized strings
     @tweets = []
     resyncing = false
-    shortened.each_slice(4) do |place,entry,lane,time|
+    @shortened.each_slice(4) do |place,entry,lane,time|
       case time
       when 'Unofficial'
         resyncing = true
