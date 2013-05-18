@@ -29,15 +29,17 @@ class RegattaTweet
         # deal with long entry name that splits the name between \( and \) onto a 2nd line
         if string =~ /\\\(/ && string !~ /\\\)/
           saved = string
+          puts "Saving... #{saved.inspect}" if $DEBUG
           next
         elsif saved && string !~ /\\\(/ && string =~ /\\\)/
           string = saved << string
           saved = nil
         end
+        puts "Adding: #{string.inspect}" if $DEBUG
         page_strings << string
       end
       page_strings
-    end.flatten.map {|_|_.gsub(/ ?\\\(.*\\\)(?: *[ABJ]+)?\z/,'')}.map{|_|_.gsub(/\\([()]) ?/,'\1')}
+    end.flatten.map{|_|_.gsub(/\\([()]) ?/,'\1')}.map {|_|_.gsub(/ ?\([^()]*?\)(?: *[ABJ]+)?\z/,'')}
 
     # This might not be needed now that page breaks are handled before the replacements
     created_at = Time.parse reader.info[:CreationDate][2..-8]
@@ -53,6 +55,7 @@ class RegattaTweet
     delete_next = nil
 
     @shortened = raw_strings.map do |string|
+      puts "#{string.inspect} => " if $DEBUG
       if delete_next            # This is the page number
         delete_next = nil       # back to your regularly scheduled programming
         ''
@@ -63,8 +66,8 @@ class RegattaTweet
         if event_title =~ string
           delete_next = true
           string = $1
+          puts "#{string.inspect} => " if $DEBUG
         end
-        puts "#{string.inspect} => " if $DEBUG
         abbreviations.each do |set|
           set.each do |group, list|
             list.each do |pair| pair.each do |original,replacement|

@@ -19,10 +19,21 @@ end
 
 require 'twitter'
 
+if ARGV[0] == '-n'
+  dont_tweet = true
+  ARGV.shift
+end
+
 ARGV.each do |file|
   rt = RegattaTweet.new(file)
   rt.each do |tweet|
-    Twitter.update tweet
-    # puts "I would say: #{tweet}"
+    puts tweet
+    if tweet.length <= 140
+      Twitter.update tweet unless dont_tweet
+    else
+      puts "#{' '*140}^-cuts here"
+      puts "** Too long to tweet: #{tweet.length} characters"
+      # puts "I would say: #{tweet}"
+    end
   end
 end
