@@ -37,7 +37,7 @@ class RegattaTweet
         page_strings << string
       end
       page_strings
-    end.flatten.map {|_|_.gsub(/ ?\\\(.*\\\)(?: *[AB]+)?\z/,'')}.map{|_|_.gsub(/\\([()]) ?/,'\1')}
+    end.flatten.map {|_|_.gsub(/ ?\\\(.*\\\)(?: *[ABJ]+)?\z/,'')}.map{|_|_.gsub(/\\([()]) ?/,'\1')}
 
     # This might not be needed now that page breaks are handled before the replacements
     created_at = Time.parse reader.info[:CreationDate][2..-8]
@@ -49,16 +49,21 @@ class RegattaTweet
 
     # Prep to handle page number eliding
     page_str = Regexp.new("#{created_at.strftime('%A %d-%b-%Y')} Page:")
+    event_title = /((?:\([^)]*\)[^()]*)*?)(?: *\([^)]*)\z/
     delete_next = nil
 
     @shortened = raw_strings.map do |string|
-      if page_str =~ string         # Oh, the page number is next!
-        delete_next = true          # We don't want it.
-        ''                          # (blanks will disappear)
-      elsif delete_next             # This is the page number
-        delete_next = nil           # back to your regularly scheduled programming
+      if delete_next            # This is the page number
+        delete_next = nil       # back to your regularly scheduled programming
         ''
-      else                          # something we want to boild down a bit
+      elsif page_str =~ string  # Oh, the page number is next!
+        delete_next = true      # We don't want it.
+        ''                      # (blanks will disappear)
+      else                      # something we want to boild down a bit
+        if event_title =~ string
+          delete_next = true
+          string = $1
+        end
         puts "#{string.inspect} => " if $DEBUG
         abbreviations.each do |set|
           set.each do |group, list|
