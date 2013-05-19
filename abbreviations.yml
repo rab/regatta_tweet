@@ -10,8 +10,9 @@
     - "Camp Randall": CR
     - "Cincinnati Junior Rowing Club": CJRC
     - "Cincinnati Junior": CJRC
-    - "Cincinnati Country Day School": CCD
-    - "Cincinnati Country Day": CCD
+    - "Cincinnati Country Day School Rowing Team": CCDS
+    - "Cincinnati Country Day School": CCDS
+    - "Cincinnati Country Day": CCDS
     - "Central Catholic HS": CCHS
     - "Central Catholic Rowing Club": CCRC
     - "Clermont Crew": Clrmnt
@@ -56,6 +57,7 @@
     - "The Milwaukee Rowing Club": Mlwkee
     - "Milwaukee": Mlwkee
     - "Rochester Rowing Club Juniors": R-MNjr
+    - "Rochester Rowing Club, Minnesota": R-MN
     - "Rochester Rowing Club of Minnesota": R-MN
     - "Rochester Minnesota": R-MN
     - "Minnesota Boat Club": MN
@@ -119,6 +121,8 @@
     - "Unaffiliated (USA)": Unaffil
 - generic:
     - "Junior Rowing Club": JRC
+    - " Rowing Team": RT
+    - "Rowing Team": RT
     - " Rowing Club": RC
     - "Rowing Club": RC
     - " Boat Club": BC
